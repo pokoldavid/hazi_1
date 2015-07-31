@@ -1,0 +1,40 @@
+
+Programozás Alapja 2 Nagy Házi
+Pokol Dávid(QH29IV)
+
+
+1.)Feladat: Étterem
+Készítsen éttermi rendelésfelvevõ programot. A program tárolja az étteremben kapható összes ételt, italt és menüt. A programtól lekérhetõ teljes, aktuális menü, amely a teljes kínálatot kiírja a képernyõre. A program legyen képes napi menüt is ajánlani. A rendelés végén írja ki a fizetendõ összeget.
+
+2.)Specifikáció
+A programom fáljból olvas be tetszõleges mennyiségû ételt és italt. A Food osztály tartalmazza az adott ételnek a nevét, árát, típusát(leves, hal) és kalória tartalmát. A Drink osztály az ital nevét, árát illetve típusát(üdítõ, kávé). A Drink és a Food osztály is a menuItem osztályból van származtatva.
+A program kiírja a teljes listát és a Menu osztály segítségével napi ajánlatot is tud tenni.
+Ezután felveszi a rendelést és végül kiírja a fizetendõ mennyiséget.
+
+A program UML diagramja:
+
+ 
+
+3.)Fõbb függvények leírása:
+menuItem:
+	double operator+(const menuItem& other);
+		Vissza adja két menuItem árának az összegét.
+Food/Drink:
+	bool operator==(const Food&/Drink& other);
+		Összehasonlít két Food/Drink-t minden értéke szerint.
+		Ez a Menu osztály FoodisElement és DrinkisElement 			függvényeihez kell.
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
